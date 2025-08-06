@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar repo') {
             steps {
-                git 'https://github.com/TestingDaniel/mi-primer-devops.git'
+                git branch: 'main', url: 'https://github.com/TestingDaniel/mi-primer-devops.git'
             }
         }
 
